@@ -21,7 +21,6 @@ Before you start, ensure you have the following prerequisites:
 
 1. Xcode installed on your Mac.
 2. Basic familiarity with UIKit and SwiftUI frameworks.
-3. An active internet connection to fetch mock data from an API (simulated for this demo).
 
 ## Installation
 
