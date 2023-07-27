@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77436D5A2A71CE4300AB3A03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77436D592A71CE4300AB3A03 /* AppDelegate.swift */; };
+		77436D5C2A71CE4300AB3A03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77436D5B2A71CE4300AB3A03 /* SceneDelegate.swift */; };
+		77436D612A71CE4300AB3A03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77436D5F2A71CE4300AB3A03 /* Main.storyboard */; };
+		77436D632A71CE4300AB3A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77436D622A71CE4300AB3A03 /* Assets.xcassets */; };
+		77436D662A71CE4300AB3A03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77436D642A71CE4300AB3A03 /* LaunchScreen.storyboard */; };
+		777EC0652A71D06000C0B11B /* MyEntity.json in Resources */ = {isa = PBXBuildFile; fileRef = 777EC0632A71D06000C0B11B /* MyEntity.json */; };
+		777EC0682A71D32B00C0B11B /* Lucid in Frameworks */ = {isa = PBXBuildFile; productRef = 777EC0672A71D32B00C0B11B /* Lucid */; };
+		777EC0772A71D37200C0B11B /* MyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EC06C2A71D37100C0B11B /* MyEntity.swift */; };
+		777EC0782A71D37200C0B11B /* EntityIndexValueTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EC06D2A71D37100C0B11B /* EntityIndexValueTypes.swift */; };
+		777EC0792A71D37200C0B11B /* CoreManagerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EC06F2A71D37200C0B11B /* CoreManagerContainer.swift */; };
+		777EC07A2A71D37200C0B11B /* App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 777EC0702A71D37200C0B11B /* App.xcdatamodeld */; };
+		777EC07B2A71D37200C0B11B /* SupportUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EC0722A71D37200C0B11B /* SupportUtils.swift */; };
+		777EC07C2A71D37200C0B11B /* EntityGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EC0732A71D37200C0B11B /* EntityGraph.swift */; };
+		777EC07D2A71D37200C0B11B /* EndpointResultPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EC0752A71D37200C0B11B /* EndpointResultPayload.swift */; };
+		777EC07E2A71D37200C0B11B /* MyEntityPayloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EC0762A71D37200C0B11B /* MyEntityPayloads.swift */; };
+		777EC0812A71D61F00C0B11B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EC0802A71D61F00C0B11B /* MainView.swift */; };
+		777EC0842A71D72000C0B11B /* HostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EC0832A71D72000C0B11B /* HostingViewController.swift */; };
+		777EC0862A71D78A00C0B11B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EC0852A71D78A00C0B11B /* DetailView.swift */; };
+		777EC0892A71D7C100C0B11B /* MainTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EC0882A71D7C100C0B11B /* MainTableCellView.swift */; };
+		777EC08B2A71D7DE00C0B11B /* DetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EC08A2A71D7DE00C0B11B /* DetailCellView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77436D562A71CE4300AB3A03 /* lucid-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lucid-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77436D592A71CE4300AB3A03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77436D5B2A71CE4300AB3A03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		77436D602A71CE4300AB3A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77436D622A71CE4300AB3A03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77436D652A71CE4300AB3A03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77436D672A71CE4300AB3A03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		777EC0632A71D06000C0B11B /* MyEntity.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MyEntity.json; sourceTree = "<group>"; };
+		777EC06C2A71D37100C0B11B /* MyEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEntity.swift; sourceTree = "<group>"; };
+		777EC06D2A71D37100C0B11B /* EntityIndexValueTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityIndexValueTypes.swift; sourceTree = "<group>"; };
+		777EC06F2A71D37200C0B11B /* CoreManagerContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreManagerContainer.swift; sourceTree = "<group>"; };
+		777EC0712A71D37200C0B11B /* App_1.0.0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = App_1.0.0.xcdatamodel; sourceTree = "<group>"; };
+		777EC0722A71D37200C0B11B /* SupportUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportUtils.swift; sourceTree = "<group>"; };
+		777EC0732A71D37200C0B11B /* EntityGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityGraph.swift; sourceTree = "<group>"; };
+		777EC0752A71D37200C0B11B /* EndpointResultPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointResultPayload.swift; sourceTree = "<group>"; };
+		777EC0762A71D37200C0B11B /* MyEntityPayloads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEntityPayloads.swift; sourceTree = "<group>"; };
+		777EC0802A71D61F00C0B11B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		777EC0832A71D72000C0B11B /* HostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingViewController.swift; sourceTree = "<group>"; };
+		777EC0852A71D78A00C0B11B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		777EC0882A71D7C100C0B11B /* MainTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableCellView.swift; sourceTree = "<group>"; };
+		777EC08A2A71D7DE00C0B11B /* DetailCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCellView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77436D532A71CE4300AB3A03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				777EC0682A71D32B00C0B11B /* Lucid in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77436D4D2A71CE4300AB3A03 = {
+			isa = PBXGroup;
+			children = (
+				77436D582A71CE4300AB3A03 /* lucid-demo */,
+				77436D572A71CE4300AB3A03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77436D572A71CE4300AB3A03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77436D562A71CE4300AB3A03 /* lucid-demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77436D582A71CE4300AB3A03 /* lucid-demo */ = {
+			isa = PBXGroup;
+			children = (
+				777EC08D2A71EEE500C0B11B /* Resources */,
+				777EC08C2A71EEA800C0B11B /* Delegates */,
+				777EC0822A71D70E00C0B11B /* ViewControllers */,
+				777EC07F2A71D60F00C0B11B /* Views */,
+				777EC05E2A71D06000C0B11B /* Descriptions */,
+				777EC0472A71D05A00C0B11B /* Generated */,
+			);
+			path = "lucid-demo";
+			sourceTree = "<group>";
+		};
+		777EC0472A71D05A00C0B11B /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				777EC06B2A71D37100C0B11B /* Entities */,
+				777EC0742A71D37200C0B11B /* Payloads */,
+				777EC06E2A71D37200C0B11B /* Support */,
+			);
+			name = Generated;
+			path = "lucid-demo/Generated";
+			sourceTree = SOURCE_ROOT;
+		};
+		777EC05E2A71D06000C0B11B /* Descriptions */ = {
+			isa = PBXGroup;
+			children = (
+				777EC0612A71D06000C0B11B /* Subtypes */,
+				777EC0622A71D06000C0B11B /* Entities */,
+			);
+			name = Descriptions;
+			path = "lucid-demo/Descriptions";
+			sourceTree = SOURCE_ROOT;
+		};
+		777EC0612A71D06000C0B11B /* Subtypes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subtypes;
+			sourceTree = "<group>";
+		};
+		777EC0622A71D06000C0B11B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				777EC0632A71D06000C0B11B /* MyEntity.json */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		777EC06B2A71D37100C0B11B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				777EC06C2A71D37100C0B11B /* MyEntity.swift */,
+				777EC06D2A71D37100C0B11B /* EntityIndexValueTypes.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		777EC06E2A71D37200C0B11B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				777EC06F2A71D37200C0B11B /* CoreManagerContainer.swift */,
+				777EC0702A71D37200C0B11B /* App.xcdatamodeld */,
+				777EC0722A71D37200C0B11B /* SupportUtils.swift */,
+				777EC0732A71D37200C0B11B /* EntityGraph.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		777EC0742A71D37200C0B11B /* Payloads */ = {
+			isa = PBXGroup;
+			children = (
+				777EC0752A71D37200C0B11B /* EndpointResultPayload.swift */,
+				777EC0762A71D37200C0B11B /* MyEntityPayloads.swift */,
+			);
+			path = Payloads;
+			sourceTree = "<group>";
+		};
+		777EC07F2A71D60F00C0B11B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77436D642A71CE4300AB3A03 /* LaunchScreen.storyboard */,
+				777EC0872A71D7A600C0B11B /* TableCells */,
+				77436D5F2A71CE4300AB3A03 /* Main.storyboard */,
+				777EC0802A71D61F00C0B11B /* MainView.swift */,
+				777EC0852A71D78A00C0B11B /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		777EC0822A71D70E00C0B11B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				777EC0832A71D72000C0B11B /* HostingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		777EC0872A71D7A600C0B11B /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				777EC0882A71D7C100C0B11B /* MainTableCellView.swift */,
+				777EC08A2A71D7DE00C0B11B /* DetailCellView.swift */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		777EC08C2A71EEA800C0B11B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				77436D592A71CE4300AB3A03 /* AppDelegate.swift */,
+				77436D5B2A71CE4300AB3A03 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		777EC08D2A71EEE500C0B11B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77436D622A71CE4300AB3A03 /* Assets.xcassets */,
+				77436D672A71CE4300AB3A03 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77436D552A71CE4300AB3A03 /* lucid-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77436D6A2A71CE4300AB3A03 /* Build configuration list for PBXNativeTarget "lucid-demo" */;
+			buildPhases = (
+				77436D522A71CE4300AB3A03 /* Sources */,
+				77436D532A71CE4300AB3A03 /* Frameworks */,
+				77436D542A71CE4300AB3A03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lucid-demo";
+			packageProductDependencies = (
+				777EC0672A71D32B00C0B11B /* Lucid */,
+			);
+			productName = "lucid-demo2";
+			productReference = 77436D562A71CE4300AB3A03 /* lucid-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77436D4E2A71CE4300AB3A03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					77436D552A71CE4300AB3A03 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 77436D512A71CE4300AB3A03 /* Build configuration list for PBXProject "lucid-demo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77436D4D2A71CE4300AB3A03;
+			packageReferences = (
+				777EC0662A71D32B00C0B11B /* XCRemoteSwiftPackageReference "Lucid" */,
+			);
+			productRefGroup = 77436D572A71CE4300AB3A03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77436D552A71CE4300AB3A03 /* lucid-demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77436D542A71CE4300AB3A03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77436D662A71CE4300AB3A03 /* LaunchScreen.storyboard in Resources */,
+				777EC0652A71D06000C0B11B /* MyEntity.json in Resources */,
+				77436D632A71CE4300AB3A03 /* Assets.xcassets in Resources */,
+				77436D612A71CE4300AB3A03 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77436D522A71CE4300AB3A03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				777EC07A2A71D37200C0B11B /* App.xcdatamodeld in Sources */,
+				777EC0812A71D61F00C0B11B /* MainView.swift in Sources */,
+				777EC0772A71D37200C0B11B /* MyEntity.swift in Sources */,
+				777EC0862A71D78A00C0B11B /* DetailView.swift in Sources */,
+				777EC0842A71D72000C0B11B /* HostingViewController.swift in Sources */,
+				777EC07C2A71D37200C0B11B /* EntityGraph.swift in Sources */,
+				777EC07D2A71D37200C0B11B /* EndpointResultPayload.swift in Sources */,
+				777EC07B2A71D37200C0B11B /* SupportUtils.swift in Sources */,
+				777EC0782A71D37200C0B11B /* EntityIndexValueTypes.swift in Sources */,
+				77436D5A2A71CE4300AB3A03 /* AppDelegate.swift in Sources */,
+				777EC07E2A71D37200C0B11B /* MyEntityPayloads.swift in Sources */,
+				777EC0892A71D7C100C0B11B /* MainTableCellView.swift in Sources */,
+				777EC08B2A71D7DE00C0B11B /* DetailCellView.swift in Sources */,
+				777EC0792A71D37200C0B11B /* CoreManagerContainer.swift in Sources */,
+				77436D5C2A71CE4300AB3A03 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77436D5F2A71CE4300AB3A03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77436D602A71CE4300AB3A03 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77436D642A71CE4300AB3A03 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77436D652A71CE4300AB3A03 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77436D682A71CE4300AB3A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77436D692A71CE4300AB3A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77436D6B2A71CE4300AB3A03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QY57KKASP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/jackbelding/Documents/XCodeProjects/Scribd/lucid-demo/lucid-demo/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alpine-software.lucid-demo2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77436D6C2A71CE4300AB3A03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QY57KKASP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/jackbelding/Documents/XCodeProjects/Scribd/lucid-demo/lucid-demo/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alpine-software.lucid-demo2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77436D512A71CE4300AB3A03 /* Build configuration list for PBXProject "lucid-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77436D682A71CE4300AB3A03 /* Debug */,
+				77436D692A71CE4300AB3A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77436D6A2A71CE4300AB3A03 /* Build configuration list for PBXNativeTarget "lucid-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77436D6B2A71CE4300AB3A03 /* Debug */,
+				77436D6C2A71CE4300AB3A03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		777EC0662A71D32B00C0B11B /* XCRemoteSwiftPackageReference "Lucid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scribd/Lucid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		777EC0672A71D32B00C0B11B /* Lucid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 777EC0662A71D32B00C0B11B /* XCRemoteSwiftPackageReference "Lucid" */;
+			productName = Lucid;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		777EC0702A71D37200C0B11B /* App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				777EC0712A71D37200C0B11B /* App_1.0.0.xcdatamodel */,
+			);
+			currentVersion = 777EC0712A71D37200C0B11B /* App_1.0.0.xcdatamodel */;
+			path = App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 77436D4E2A71CE4300AB3A03 /* Project object */;
+}

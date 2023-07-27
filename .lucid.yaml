@@ -1,0 +1,15 @@
+targets:
+  app:
+    output_path: App/Generated
+    module_name: App
+  app_tests:
+    output_path: AppTests/Generated
+    module_name: AppTests
+  app_test_support:
+    output_path: AppTestSupport/Generated
+    module_name: AppTestSupport
+active_targets:
+- app
+- app_tests
+- app_test_support
+input_path: Descriptions

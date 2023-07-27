@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="1.0.0">
+
+    <entity name="my_entity_1_0_0" representedClassName="ManagedMyEntity_1_0_0" syncable="YES" codeGenerationType="class">
+        <attribute name="_identifier" attributeType="Integer 64" usesScalarValueType="YES" syncable="YES" optional="YES" versionHashModifier=""/>
+        <attribute name="__identifier" attributeType="String" usesScalarValueType="YES" syncable="YES" optional="YES" versionHashModifier=""/>
+        <attribute name="__type_uid" attributeType="String" usesScalarValueType="YES" syncable="YES" optional="YES"/>
+        <fetchIndex name="remoteIdentifier">
+            <fetchIndexElement property="_identifier" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="localIdentifier">
+            <fetchIndexElement property="__identifier" type="Binary" order="ascending"/>
+        </fetchIndex>
+
+        <attribute name="_remote_synchronization_state" attributeType="String" syncable="YES" optional="YES"/>
+        <attribute name="_my_bool_property" attributeType="Integer 64" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="_my_string_property" attributeType="String" syncable="YES"/>
+    </entity>
+
+</model>

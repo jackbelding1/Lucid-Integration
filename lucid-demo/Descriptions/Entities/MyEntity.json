@@ -1,0 +1,25 @@
+{
+  "remote" : true,
+  "uid" : "my_entity",
+  "versionHistory" : [
+    {
+      "version" : "1.0.0 - other"
+    }
+  ],
+  "persist" : true,
+  "properties" : [
+    {
+      "name" : "my_string_property",
+      "propertyType" : "string"
+    },
+    {
+      "name" : "my_bool_property",
+      "propertyType" : "bool"
+    }
+  ],
+  "identifier" : {
+    "key" : "id",
+    "type" : "int"
+  },
+  "name" : "my_entity"
+}
